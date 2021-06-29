@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>application form</title>
+<!--  <script type="text/javascript" src="validation.js"></script> -->
+  <style>
+  td{font-size:150%;}
+  </style>
+ </head>
+ <body >
+ <form name="regi"  action="login.html" onsubmit="return validate();">
+  
+  <table cellpadding="5" cellspacing="5" width="100%" align="center" bgcolor="aqua">
+  <caption><h1>APPLICATION FORM</h1></caption>
+  <tr>
+  <td >First name</td>
+  <td><input type="text"name="name1" id="n1" placeholder="firstname" size="50%" ></td>
+  </tr>
+  <tr>
+  <td>Last name</td>
+  <td><input type="text"name="name2" id="n2" placeholder="lastname" size="50%"></td>
+  </tr>
+  <tr>
+  <td>Gender</td>
+  <td><input type="radio"name="sex" value="male" >Male</td>
+  <td><input type="radio"name="sex" value="female" >Female</td>
+  </tr>
+  <tr>
+  <td>Fathername</td>
+  <td><input type="text"name="fname1" id="fn1" placeholder="fathername" size="50%"></td>
+  </tr>
+  <tr>
+  <td>Mothername</td>
+  <td><input type="text"name="mname1" id="mn1" placeholder="mothername" size="50%"></td>
+  </tr>
+  
+  <tr>
+  <td>Adhar number</td>
+  <td><input type="number"name="aname1" id="a1" placeholder="XXXX XXXX XXXX" size="50%"></td>
+  </tr>
+  <tr>
+  <td style="color:red;">QUALIFICATION</td>
+  </tr>
+  <tr>
+  <td> SSC:              hallticket:</td>
+  <td><input type="number"name="ssc" id="ssc1" placeholder="ssc hallticket" >marks:</td>
+  <td><input type="number"name="ss" id="ssc2" placeholder="marks" >percentage(%):</td>
+  <td><input type="number"name="s" id="ssc3" placeholder="percentage" ></td>
+  </tr>
+  <tr>
+  <td> Intermediate:       hallticket:</td>
+  <td><input type="number"name="inter" id="inter1" placeholder="interhallticket" >marks:</td>
+  <td><input type="number"name="inte" id="inter2" placeholder="marks" >percentage(%):</td>
+  <td><input type="number"name="inte1" id="inter3" placeholder="percentage" ></td>
+  </tr>
+  <tr>
+  <td> Graduation:<input type="text" name="grad" id="grad1" placeholder="course">hallticket:</td>
+  <td><input type="text"name="gra" id="gra1" placeholder="hallticket" >marks:</td>
+  <td><input type="number"name="gr" id="gra2" placeholder="marks" >percentage(%):</td>
+  <td><input type="number"name="g" id="gra3" placeholder="percentage" ></td>
+  </tr>
+  <tr>
+  <td> Postgrad:<input type="text" name="posgrad" id="posgrad1" placeholder="course">hallticket:</td>
+  <td><input type="text"name="postgrad" id="postgrad1" placeholder=" hallticket" >marks:</td>
+  <td><input type="number"name="postgra" id="postgrad2" placeholder="marks" >percentage(%):</td>
+  <td><input type="number"name="postgr" id="postgrad3" placeholder="percentage" ></td>
+  </tr>
+  <tr>
+  <td> Other:<input type="text" name="othcourse" id="othcourse1" placeholder="course">hallticket:</td>
+  <td><input type="text"name="other" id="oth1" placeholder=" hallticket" >marks:</td>
+  <td><input type="number"name="othe" id="oth2" placeholder="marks" >percentage(%):</td>
+  <td><input type="number"name="oth" id="oth3" placeholder="percentage" ></td>
+  </tr>
+  <tr>
+  <td style="color:red;">PERSONAL ADDRESS</td>
+  </tr>
+  
+  <tr>
+  <td>H.NO</td>
+  <td><input type="text" name="Hname1" id="h1" placeholder="H.NO" size="50%"></td>
+  </tr>
+  <tr>
+  <td>Street/colony</td>
+  <td><input type="text"name="sname1" id="s1" placeholder="street/colony" size="50%"></td>
+  </tr>
+  <tr>
+  <td>village/town</td>
+  <td><input type="text"name="vname1" id="v1" placeholder="village/town" size="50%"></td>
+  </tr>
+  <tr>
+  <td>mandal</td>
+  <td><input type="text"name="maname1" id="ma1" placeholder="mandal" size="50%"></td>
+  </tr>
+  <tr>
+  <td>district</td>
+  <td><input type="text"name="dname1" id="d1" placeholder="district" size="50%"></td>
+  </tr>
+ 
+  <tr>
+  <td>city</td>
+  <td><select name="city">
+  <option value="-1"  selected> select</option>
+  <option > hyderabad</option>
+  <option > amaravathi</option>
+  <option > chennai</option>
+  <option > mumbai</option>
+  <option > delhi</option>
+  <option > gandhinagar</option>
+  <option >bhopal</option>
+  <option > kolkata</option>
+  <option > srinagar</option>
+  <option >thiruvananthapuram</option>
+  <option > patna</option>
+  <option >other</option>
+  </select>
+  </td>
+  </tr>
+  <tr>
+  <td>state</td>
+  <td><select name="state">
+  <option value="-1"  selected> select</option>
+  <option > andhrapradesh</option>
+  <option > telangana</option>
+  <option > tamilnadu</option>
+  <option > karnataka</option>
+  <option > kerala</option>
+  <option > maharastra</option>
+  <option >gujarat</option>
+  <option > odisha</option>
+  <option > madhrapradesh</option>
+  <option >bihar</option>
+  <option > goa</option>
+  <option >other</option>
+  </select>
+  </td>
+  </tr>
+  <tr>
+  <td>Pincode</td>
+  <td><input type="text"name="pname1" id="p1" placeholder="XXXXXX" size="50%"></td>
+  </tr>
+  <tr>
+  <td style="color:red;">PERMANENT ADDRESS</td>
+  </tr>
+  <tr>
+  <td>H.NO</td>
+  <td><input type="text"name="Hname2" id="h2" placeholder="H.NO" size="50%"></td>
+  </tr>
+  <tr>
+  <td>Street/colony</td>
+  <td><input type="text"name="sname2" id="s2" placeholder="street/colony" size="50%"></td>
+  </tr>
+  <tr>
+  <td>village/town</td>
+  <td><input type="text"name="vname2" id="v2" placeholder="village/town" size="50%"></td>
+  </tr>
+  <tr>
+  <td>mandal</td>
+  <td><input type="text"name="maname2" id="ma2" placeholder="mandal" size="50%"></td>
+  </tr>
+  <tr>
+  <td>district</td>
+  <td><input type="text"name="dname2" id="d2" placeholder="district" size="50%"></td>
+  </tr>
+  <tr>
+  <td>city</td>
+  <td><select name="city1">
+  <option value="-1"  selected> select</option>
+  <option > hyderabad</option>
+  <option > amaravathi</option>
+  <option > chennai</option>
+  <option > mumbai</option>
+  <option > delhi</option>
+  <option > gandhinagar</option>
+  <option >bhopal</option>
+  <option > kolkata</option>
+  <option > srinagar</option>
+  <option >thiruvananthapuram</option>
+  <option > patna</option>
+  <option >other</option>
+  </select>
+  </td>
+  </tr>
+  <tr>
+  <td>state</td>
+  <td><select name="state1">
+  <option value="-1"  selected> select</option>
+  <option > andhrapradesh</option>
+  <option > telangana</option>
+  <option > tamilnadu</option>
+  <option > karnataka</option>
+  <option > kerala</option>
+  <option > maharastra</option>
+  <option >gujarat</option>
+  <option > odisha</option>
+  <option > madhrapradesh</option>
+  <option >bihar</option>
+  <option > goa</option>
+  <option >other</option>
+  </select>
+  </td>
+  </tr>
+  <tr>
+  <td>Pincode</td>
+  <td><input type="text"name="pname2" id="p2" placeholder="XXXXXX" size="50%"></td>
+  </tr>
+  <tr>
+  <td>date of birth</td>
+  <td><input type="date" size="50%" name="dob1"></td>
+  </tr>
+  <tr>
+  <td>mobile no</td>
+  <td><input type="number"  name="mobile" id="mobile1" placeholder="mobile no"></td>
+  </tr>
+  <tr>
+  <td>email id</td>
+  <td><input type="text"  name="email1" id="email2" placeholder="email id" size="50%"></td>
+  </tr>
+  <tr>
+  <td ><input type="submit" value="submit"></td>
+  <td><input type="reset" value="reset"></td>
+  </tr>
+  </table>
+  </form>
+ 
+  <script>
+  
+  function validate()
+  {
+if(document.regi.name1.value == ""){
+		  alert("firstname can't be blank");
+		document.regi.n1.focus();
+		return false;
+	
+}
+if(document.regi.name2.value == ""){
+		  alert("lastname can't be blank");
+		document.regi.n2.focus();
+		return false;
+	
+}
+if((regi.sex[0].checked==false) && (regi.sex[1].checked==false)){
+	alert("please choose your gender:male or female");
+	return false;
+}
+
+if(document.regi.fname1.value == ""){
+		  alert("fathername can't be blank");
+		document.regi.fn1.focus();
+		return false;
+	
+}
+if(document.regi.mname1.value == ""){
+		  alert("mothername can't be blank");
+		document.regi.mn1.focus();
+		return false;
+	
+}
+
+if(document.regi.aname1.value == "" || document.regi.aname1.value.length!= 12 || isNaN(document.regi.aname1.value))
+{
+	     alert(" please provide  your adharnumber  ");
+		document.regi.a1.focus();
+		return false;
+}
+if(document.regi.ssc.value == "" ||  document.regi.ssc.value.length!=10 ){
+		  alert("please provide your ssc hallticket");
+		document.regi.ssc1.focus();
+		return false;
+	
+}
+if(document.regi.ss.value == "" ||  document.regi.ss.value.length!=3){
+		  alert("please provide your ssc marks");
+		document.regi.ssc2.focus();
+		return false;
+	
+}
+if(document.regi.s.value == "" || document.regi.s.value.length!=2){
+		  alert("please provide your ssc percentage");
+		document.regi.ssc3.focus();
+		return false;
+	
+}
+if(document.regi.inter.value == "" ||  document.regi.inter.value.length!=10){
+		  alert("please provide your inter hallticket");
+		document.regi.inter1.focus();
+		return false;
+	
+}
+if(document.regi.inte.value == ""  || document.regi.inte.value.length!=3){
+		  alert("please provide your inter marks");
+		document.regi.inter2.focus();
+		return false;
+	
+}
+if(document.regi.inte1.value == "" || document.regi.inte1.value.length!=2){
+		  alert("please provide your inter percentage");
+		document.regi.inter3.focus();
+		return false;
+	
+}
+if(document.regi.grad.value == ""){
+		  alert("please provide your graduation course");
+		document.regi.grad1.focus();
+		return false;
+	
+}
+if(document.regi.gra.value == ""   || document.regi.gra.value.length!=10){
+		  alert("please provide your graduation hallticket");
+		document.regi.gra1.focus();
+		return false;
+	
+}
+if(document.regi.gr.value == ""  ){
+		  alert("please provide your graduation marks");
+		document.regi.gra2.focus();
+		return false;
+	
+}
+if(document.regi.g.value == ""   || document.regi.g.value.length!=2){
+		  alert("please provide your graduation percentage");
+		document.regi.gra3.focus();
+		return false;
+	
+}
+if(document.regi.posgrad.value == ""){
+		  alert("please provide your postgraduation course");
+		document.regi.posgrad1.focus();
+		return false;
+	
+}
+
+if(document.regi.postgrad.value == "" ){
+		  alert("please provide your postgraduation hallticket");
+		document.regi.postgrad1.focus();
+		return false;
+	
+}
+if(document.regi.postgra.value == "" ){
+		  alert("please provide your postgraduation  marks");
+		document.regi.postgrad2.focus();
+		return false;
+	
+}
+if(document.regi.postgr.value == ""  || document.regi.postgr.value.length!=2){
+		  alert("please provide your postgraduation percentage");
+		document.regi.postgrad3.focus();
+		return false;
+	
+}
+if(document.regi.othcourse.value == ""){
+		  alert("please provide your  othercourse");
+		document.regi.othcourse1.focus();
+		return false;
+	
+}
+if(document.regi.other.value == "" ){
+		  alert("please provide your other hallticket");
+		document.regi.oth1.focus();
+		return false;
+	
+}
+if(document.regi.othe.value == "" ){
+		  alert("please provide your other marks");
+		document.regi.oth2.focus();
+		return false;
+	
+}
+if(document.regi.oth.value == ""  || document.regi.oth.value.length!=2){
+		  alert("please provide your other percentage");
+		document.regi.oth3.focus();
+		return false;
+	
+} 
+
+if(document.regi.Hname1.value == "")
+{
+	alert("please provide your HNO  personal address");
+	document.regi.h1.focus();
+	return false;
+}
+
+if(document.regi.sname1.value == "") 
+{
+alert("please provide your street/colony personal address");
+	document.regi.s1.focus();
+	return false;
+}
+
+
+if(document.regi.vname1.value == ""){
+	alert("please provide your village personal address");
+	document.regi.v1.focus();
+	return false;
+
+} 
+
+
+if(document.regi.maname1.value == ""){
+	alert("please provide your  mandal personal address");
+	document.regi.ma1.focus();
+return false;
+}
+
+if(document.regi.dname1.value == "" ){
+	alert("please provide your  district personal address");
+	document.regi.d1.focus();
+	return false;
+}
+
+
+if(document.regi.city.value == "-1"){
+	alert("please provide your city of personal address");
+	return false;
+}
+
+if(document.regi.state.value == "-1"){
+	alert("please provide your state of personal address");
+	return false;
+}
+if(document.regi.pname1.value == ""){
+	alert("please provide your pincode of personal address");
+	document.regi.p1.focus();
+	return false;
+}
+
+if(document.regi.Hname2.value == "")
+{
+	alert("please provide your HNO  permanent address");
+	document.regi.h2.focus();
+	return false;
+}
+
+
+if(document.regi.sname2.value == "") 
+{
+alert("please provide your street/colony permanent address");
+	document.regi.s2.focus();
+	return false;
+}
+
+
+if(document.regi.vname2.value == ""){
+	alert("please provide your village permanent address");
+	document.regi.v2.focus();
+	return false;
+
+} 
+
+
+if(document.regi.maname2.value == ""){
+	alert("please provide your  mandal permanent address");
+	document.regi.ma2.focus();
+return false;
+}
+
+
+if(document.regi.dname2.value == "" ){
+	alert("please provide your  district permanent address");
+	document.regi.d2.focus();
+	return false;
+}
+
+
+if(document.regi.city1.value == "-1"){
+	alert("please provide your city of permanent address");
+	return false;
+}
+
+
+if(document.regi.state1.value == "-1"){
+	alert("please provide your state of permanent address");
+	return false;
+}
+if(document.regi.pname2.value == ""){
+	alert("please provide your pincode of permanent address");
+	document.regi.p2.focus();
+	return false;
+}
+var curdate=new Date();
+var dob= new Date(document.regi.dob1.value);
+if(dob > curdate){
+	alert("please enter valid date of birth");
+	return false;
+	
+}
+if(document.regi.mobile.value == "" || isNaN(document.regi.mobile.value) || document.regi.mobile.value.length!=10){
+	alert("please enter valid mobile number");
+	document.regi.mobile1.focus();
+	return false;
+}
+
+var x=document.regi.email1.value;
+var a=x.indexOf("@");
+var d=x.lastIndexOf(".");
+if(a<1 || d<a+2 || d+2>=x.length){
+	alert("please enter valid email address\natposition:"+a+"\ndotposition"+d);
+	document.regi.email1.focus();
+	return false;
+}
+
+return true;
+}
+
+
+  </script>
+  
+ </body>
+</html>
